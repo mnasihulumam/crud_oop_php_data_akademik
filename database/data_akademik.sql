@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 07, 2020 at 01:37 PM
+-- Generation Time: Aug 08, 2020 at 05:26 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -97,7 +97,7 @@ INSERT INTO `matkul` (`kd_matkul`, `nama_matkul`, `hari`, `nip`) VALUES
 CREATE TABLE `user` (
   `id` int(15) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Indexes for dumped tables
