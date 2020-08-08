@@ -5,7 +5,7 @@
 		$_SESSION['user_aktiv'] = NULL;
 		extract($_POST);
 		include "konek.php";
-					$p=md5($password);
+					$password=md5($password);
 					$qry	= mysqli_query($koneksi,"SELECT * FROM user WHERE username = '$username' AND password = '$password'");
 					$jum	= mysqli_num_rows($qry);
 
